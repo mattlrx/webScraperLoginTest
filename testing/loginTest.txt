@@ -4,3 +4,9 @@
 "missingCookiePage" - success - 2018-05-04_01:11:54
 "accessDeniedPageWrongPassword" - success - 2018-05-04_01:11:57
 "accessDeniedPageNoUserName" - success - 2018-05-04_01:12:01
+"redirectPage" - success - 2018-05-04_17:00:14
+"welcomePage" - success - 2018-05-04_17:00:18
+"accessDeniedPageNoPassword" - success - 2018-05-04_17:00:22
+"missingCookiePage" - success - 2018-05-04_17:00:26
+"accessDeniedPageWrongPassword" - success - 2018-05-04_17:00:29
+"accessDeniedPageNoUserName" - success - 2018-05-04_17:00:32

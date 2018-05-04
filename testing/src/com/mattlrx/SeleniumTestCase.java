@@ -13,7 +13,7 @@ public class SeleniumTestCase {
 
 	public String login (String url, String usr, String pwd, String expected, Boolean storeCookies) throws InterruptedException {
 		String ret = "";
-		System.setProperty("webdriver.chrome.driver", "/home/matthieulrx/_work/chromedriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "chromedriver/chromedriver");
 
 		ChromeDriver driver;
 		ChromeOptions options = new ChromeOptions();  
