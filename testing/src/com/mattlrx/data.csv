@@ -1,0 +1,7 @@
+"redirectPage",H,http://testing-ground.scraping.pro/login,admin?mode=login,12345,h3 class="success">REDIRECT,true
+STOP
+"welcomePage",S,http://testing-ground.scraping.pro/login,admin,12345,h3 class="success">WELCOME :),true
+"accessDeniedPageNoPassword",S,http://testing-ground.scraping.pro/login,admin,,h3 class="error">ACCESS DENIED!,true
+"missingCookiePage",S,http://testing-ground.scraping.pro/login,admin,12345,h3 class="error">THE SESSION COOKIE IS MISSING OR HAS A WRONG VALUE!,false
+"accessDeniedPageWrongPassword",S,http://testing-ground.scraping.pro/login,admin,23456,h3 class="error">ACCESS DENIED!,true
+"accessDeniedPageNoUserName",S,http://testing-ground.scraping.pro/login,,,h3 class="error">ACCESS DENIED!,true
