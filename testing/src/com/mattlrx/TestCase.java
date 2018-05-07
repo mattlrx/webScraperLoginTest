@@ -34,6 +34,7 @@ public class TestCase {
 			this.data2 = "";
 		}
 
+		// in case data3 entry is empty
 		if (data.length > 6) {
 			this.data3 = data[6].replaceAll("\"", "");
 		}else {
