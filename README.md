@@ -60,9 +60,6 @@ H to login using an HTTP client (this is to test the redirect page)
 if you only want to run the first N lines, enter a line that starts with STOP and only the test data before this line will be loaded.
 
 ============execute the test:===========
-
 to execute the test run the Main method in the TestDriver class.
-
 after each test is executed the result of the test is appended in the test file defined as the report file.
-
 once the test is completed, open loginTest.txt to see the test results
