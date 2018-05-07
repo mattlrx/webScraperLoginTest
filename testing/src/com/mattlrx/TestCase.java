@@ -13,7 +13,7 @@ public class TestCase {
 	private String expectedString;
 	private String data3;
 	private String testType;
-	
+
 	/**
 	 * constructor, to be instantiated with the data passed from the csv file.
 	 * data1 data2 data3 have such names so this could be extended beyond the login page test.
@@ -23,19 +23,28 @@ public class TestCase {
 		this.testCaseName = data[0];
 		this.testType = data[1];
 		this.url = data[2].replaceAll("\"", "");
-		
+
 		this.expectedString = data[3].substring(1, data[3].length()-1).replaceAll("\\\\", "");
-		
-		this.data1 = data[4].replaceAll("\"", "");
-		this.data2 = data[5].replaceAll("\"", "");
-		
-		this.data3 = data[6].replaceAll("\"", "");
+
+		if(data.length > 5) {
+			this.data1 = data[4].replaceAll("\"", "");
+			this.data2 = data[5].replaceAll("\"", "");
+		}else {
+			this.data1 = "";
+			this.data2 = "";
+		}
+
+		if (data.length > 6) {
+			this.data3 = data[6].replaceAll("\"", "");
+		}else {
+			this.data3 = "";
+		}
 	}
-	
+
 	public TestCase() {
-		
+
 	}
-	
+
 	public String getTestCaseName() {
 		return testCaseName;
 	}
@@ -94,8 +103,8 @@ public class TestCase {
 
 
 
-	
-	
+
+
 	/**
 	 * this method will determine what test to run:
 	 * 		S will call the selenium test to login
@@ -111,7 +120,7 @@ public class TestCase {
 		if (this.testType.contains("S")) {
 			SeleniumTestCase tc = new SeleniumTestCase();
 			return tc.login(this.url, this.data1, this.data2, this.expectedString, Boolean.valueOf(this.data3));
-			
+
 
 		}else if(this.testType.contains("H")) {
 			HTTPClientTestCase tc = new HTTPClientTestCase();

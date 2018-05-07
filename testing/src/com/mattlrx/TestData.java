@@ -38,6 +38,7 @@ public class TestData {
 				}
 				// use comma as separator
 				String[] data = line.split(cvsSplitBy);
+				
 				TestCase testcase = new TestCase(data);
 				System.out.println(testcase.getTestCaseName());
 				testcases.add(testcase);

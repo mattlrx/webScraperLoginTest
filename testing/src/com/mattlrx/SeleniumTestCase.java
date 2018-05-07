@@ -77,6 +77,10 @@ public class SeleniumTestCase {
 			ret = "failure";
 		}
 
+		//click the GO BACK link
+		driver.findElement(By.xpath("//a[@href='login']")).click();
+		Thread.sleep(100);
+		
 		driver.close();
 		return ret;
 	}
