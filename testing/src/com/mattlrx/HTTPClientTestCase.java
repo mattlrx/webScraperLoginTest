@@ -29,7 +29,7 @@ public class HTTPClientTestCase {
 	private CloseableHttpClient httpclient = HttpClients.createDefault();
 	private HttpClientContext context = HttpClientContext.create();
 	
-	public String httpPostNoRedirect (String url, String usr, String pwd, String expected, Boolean storeCookies) throws ClientProtocolException, IOException, URISyntaxException {
+	public String httpPostNoRedirect (String url, String usr, String pwd, String expected) throws ClientProtocolException, IOException, URISyntaxException {
 		HttpPost httpPost = new HttpPost(url);
 		List <NameValuePair> nvps = new ArrayList <NameValuePair>();
 		nvps.add(new BasicNameValuePair("usr", usr));

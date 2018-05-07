@@ -10,13 +10,16 @@ public class TestDriver {
 	
 	
 	public static void main(String[] args) throws InterruptedException, ClientProtocolException, IOException, URISyntaxException {
-		// TODO Auto-generated method stub
+		
+		// sets the report
 		Report report = new Report("loginTest.txt");
+		
+		// read the test data and execute all loaded tests
 		TestData data = new TestData();
 		data.loadData("data.csv");
 		System.out.println("starting");
-		for (TestCase tc : data.testcases) {
-			report.writeTestResult(tc.testCaseName, tc.runTest());
+		for (TestCase tc : data.getTestcases()) {
+			report.writeTestResult(tc.getTestCaseName(), tc.runTest());
 			
 		}
 

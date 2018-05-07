@@ -1,6 +1,6 @@
-"redirectPage",H,http://testing-ground.scraping.pro/login?mode=login,admin,12345,h3 class='success'>REDIRECTING,true
-"welcomePage",S,http://testing-ground.scraping.pro/login,admin,12345,h3 class="success">WELCOME :),true
-"accessDeniedPageNoPassword",S,http://testing-ground.scraping.pro/login,admin,,h3 class="error">ACCESS DENIED!,true
-"missingCookiePage",S,http://testing-ground.scraping.pro/login,admin,12345,h3 class="error">THE SESSION COOKIE IS MISSING OR HAS A WRONG VALUE!,false
-"accessDeniedPageWrongPassword",S,http://testing-ground.scraping.pro/login,admin,23456,h3 class="error">ACCESS DENIED!,true
-"accessDeniedPageNoUserName",S,http://testing-ground.scraping.pro/login,,,h3 class="error">ACCESS DENIED!,true
+"redirectPage",H,http://testing-ground.scraping.pro/login?mode=login,h3 class='success'>REDIRECTING,admin,12345,
+"welcomePage",S,http://testing-ground.scraping.pro/login,h3 class="success">WELCOME :),admin,12345,true
+"accessDeniedPageNoPassword",S,http://testing-ground.scraping.pro/login,h3 class="error">ACCESS DENIED!,admin,,true
+"missingCookiePage",S,http://testing-ground.scraping.pro/login,h3 class="error">THE SESSION COOKIE IS MISSING OR HAS A WRONG VALUE!,admin,12345,false
+"accessDeniedPageWrongPassword",S,http://testing-ground.scraping.pro/login,h3 class="error">ACCESS DENIED!,admin,23456,true
+"accessDeniedPageNoUserName",S,http://testing-ground.scraping.pro/login,h3 class="error">ACCESS DENIED!,,,true
